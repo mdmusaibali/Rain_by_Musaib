@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: none;
+  background: none;
+}
+
 html {
   font-size: 62.5%;
   font-family: "EB Garamond", serif;
