@@ -13,6 +13,12 @@ controlButton.addEventListener("click", function () {
   }
 });
 
-range.addEventListener("mousemove", function (e) {
-  audio.volume = e.target.value;
+// range.addEventListener("mousemove", function (e) {
+//   audio.volume = e.target.value;
+// });
+
+["mousemove", "change"].forEach((events) => {
+  range.addEventListener(events, function (e) {
+    audio.volume = e.target.value;
+  });
 });
