@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="src/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Rain by Musaib</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="rain-video" loop autoplay muted>
+        <source src="src/video/Anime Rain Loop wallpapers.mp4" />
+      </video>
+      <audio id="audioplayer">
+        <source src="src/audio/0.mp4" type="audio/mp4" />
+        <source src="src/audio/0.ogg" type="audio/ogg" />
+        <source src="src/audio/0.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <section>
+        <div class="controls">
+          <button class="button-play-pause">
+            <ion-icon class="icon-controls" name="play-outline"></ion-icon>
+          </button>
+          <input
+            value="0.89"
+            class="range"
+            type="range"
+            min="0.05"
+            max="1"
+            step="0.01"
+          />
+          <h1 class="heading-primary">RAIN</h1>
+          <p class="author">by Musaib</p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/mohammed-musaib-ali-b891601ba"
+              target="_blank"
+            >
+              <ion-icon class="icon-social" name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="https://github.com/mdmusaibali" target="_blank">
+              <ion-icon class="icon-social" name="logo-github"></ion-icon
+            ></a>
+            <a href="https://www.instagram.com/mdmusaibali/" target="_blank">
+              <ion-icon class="icon-social" name="logo-instagram"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
